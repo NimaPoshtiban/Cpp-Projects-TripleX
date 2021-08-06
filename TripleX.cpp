@@ -1,9 +1,10 @@
 #include <iostream>;
+using namespace std;
 
 int changeGameDifficulty()
 {
-	std::cout << "You are a secret agent breaking into a secure server room\n"; 
-	std::cout << "You need to enter the corroct codes to continue...\n";
+	cout << "You are a secret agent breaking into a secure server room\n"; 
+	cout << "You need to enter the corroct codes to continue...\n";
 
 	int CodeA = 4;
 	int CodeB = 3;
@@ -12,13 +13,16 @@ int changeGameDifficulty()
 	const int CodeSum = CodeA + CodeB + CodeC;
 	const int CodeProduct = CodeA * CodeB * CodeC;
 
-	std::cout << std::endl;
-	std::cout << "+ There are three numbers in the code" << std::endl;
-	std::cout << "+ The codes add-up to: "<< CodeSum << std::endl ;
-	std::cout << "+ The codes multiply to give: " << CodeProduct << std::endl ;
+	cout << endl;
+	cout << "+ There are three numbers in the code" << endl;
+	cout << "+ The codes add-up to: "<< CodeSum << endl ;
+	cout << "+ The codes multiply to give: " << CodeProduct << endl ;
 
-	int playerGuess;
+	int GuessA;
+	int GuessB;
+	int GuessC;
 
+	std::cin >> GuessA >> GuessB >> GuessC;
 	return 0;
 }
 
