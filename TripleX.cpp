@@ -27,7 +27,7 @@ bool PlayGame(int LevelDifficulty=1)
 
 	int GuessA, GuessB, GuessC;
 
-	std::cin >> GuessA >> GuessB >> GuessC;
+	cin >> GuessA >> GuessB >> GuessC;
 
 
 	int GuessSum = GuessA + GuessB + GuessC;
